@@ -4,12 +4,46 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Vite App</title>
-    <script type="module" crossorigin src="/assets/index-36cd5a33.js"></script>
-    <link rel="stylesheet" href="/assets/index-48a8825f.css">
+    <script type="module" crossorigin src="/assets/index-41e411d3.js"></script>
+    <link rel="stylesheet" href="/assets/index-3bc520d9.css">
   </head>
   <body>
     <div id="app"></div>
+
+    <!-- <a
+      href="https://search.kmb.hk/KMBWebSite/?action=routesearch&route=968A"
+      target="_blank"
+    > -->
+    <section data-bus-eta-section></section>
+    <section data-news></section>
+    <section data-newsAPI></section>
+    <template id="bus-eta-template">
+      <div class="eta-card">
+        <div class="left" data-route></div>
+        <div class="right">
+          <div class="dest">
+            <span data-stop></span> > <span data-dest></span>
+          </div>
+          <div class="eta-time">
+            <div class="time" data-eta>N/A</div>
+            <div class="time">N/A</div>
+            <div class="time">N/A</div>
+          </div>
+        </div>
+      </div>
+    </template>
+    <template id="HK01-template">
+      <div>
+        <span data-title></span>
+      </div>
+    </template>
+    <template id="newsapi-template">
+      <div data-title></div>
+    </template>
     
   </body>
 </html>
+
+<!-- https://winstonhyypia.medium.com/the-making-of-mmm-hk-kmb-module-db6eb0181eb6 -->
